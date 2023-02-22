@@ -1,17 +1,3 @@
-.navbar {
-  z-index: 1040;
-}
-.side-nav {
-  margin-top: 57px !important;
-}
-
-@media (min-width: 1200px){
-.fixed-sn main {
-    margin-left: 20% !important;
-    margin-right: 20% !important;
-  }
-}
-
 @keyframes show-toast{
     0% {bottom: -100%}
     20% {bottom: 100px}
@@ -26,4 +12,15 @@
     animation-name: show-toast;
     animation-duration: 8s;
     z-index: 99;
+}
+
+.navbar {
+  	z-index: 1040;
+}
+.side-nav {
+  margin-top: 45px !important;
+}
+
+.double-nav .breadcrumb-dn p {
+    color: #fff;
 }

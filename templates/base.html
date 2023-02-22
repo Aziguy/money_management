@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {% block title %}<title>Money</title>{% endblock %}
+    <title>Money {% block title %} {% endblock %}</title>
     <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static '/css/mdb.min.css' %}">
     <link rel="stylesheet" href="{% static '/css/mdb.min.css.map' %}">
@@ -19,11 +19,15 @@
     {% include 'includes/header.html' %}
     <!-- END LOADING HEADER -->
 
+    <!--Main Layout-->
+    <main>
+        <div class="container-fluid mt-5">
     <!-- BEGIN LOADING CONTENT HERE -->
-    {% block content %}
-        <!-- CONTENT GOES HERE -->
-    {% endblock  %}
+    {% block content %}    {% endblock  %}
     <!-- END LOADING CONTENT -->
+        </div>
+    </main>
+    <!--Main Layout-->
 
     <!-- BEGIN LOADING FOOTER HERE -->
     {% include 'includes/footer.html' %}
