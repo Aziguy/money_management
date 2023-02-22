@@ -153,7 +153,7 @@ MESSAGE_TAGS = {
 }
 
 # Email configuration
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 EMAIL_FROM_USER = config('EMAIL_FROM_USER')
 EMAIL_HOST = config("EMAIL_HOST")
 EMAIL_PORT = config("EMAIL_PORT", cast=int)
@@ -162,6 +162,16 @@ EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 DEFAULT_FROM_EMAIL = "Money-Management <mandatairess@gmail.com>"
+
+# Heroku Email
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+MAILGUN_API_KEY = config('MAILGUN_API_KEY')
+MAILGUN_DOMAIN = config('MAILGUN_DOMAIN')
+MAILGUN_PUBLIC_KEY = config('MAILGUN_PUBLIC_KEY')
+MAILGUN_SMTP_LOGIN = config('MAILGUN_SMTP_LOGIN')
+MAILGUN_SMTP_PASSWORD = config('MAILGUN_SMTP_PASSWORD')
+MAILGUN_SMTP_PORT = config('MAILGUN_SMTP_PORT', cast=int)
+MAILGUN_SMTP_SERVER = config('MAILGUN_SMTP_SERVER')
 
 # Whitenoise settings
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
