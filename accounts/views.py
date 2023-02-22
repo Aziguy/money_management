@@ -86,7 +86,7 @@ class RegistrationView(View):
                 email = EmailMessage(
                     email_subject,
                     'Hi '+user.username + ', Please the link below to activate your account \n'+activate_url,
-                    'noreply@gmail.com',
+                    'mandatairessm@gmail.com',
                     [email],
                 )
                 email.send(fail_silently=False)
