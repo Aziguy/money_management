@@ -5,6 +5,10 @@
     background-color: #30caa0;
 }
 
+#branding h1 {
+  color: #ffffff;
+}
+
 div .breadcrumbs{
     background-color: #30caa0;
 }
@@ -15,4 +19,21 @@ input[type="button"],
 .submit-row input,
 a.button {
   background: #10284e;
+}
+
+.login .submit-row {
+  padding: 0px !important;
+}
+
+input[type="submit"],
+input[type="button"],
+.submit-row input {
+  width: 100%;
+  background: rgb(0, 62, 69);
+}
+
+.module h2,
+.module caption,
+.inline-group h2 {
+  background: rgb(0, 62, 69);
 }

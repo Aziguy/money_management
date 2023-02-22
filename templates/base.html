@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="{% static '/css/mdb.min.css.map' %}">
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="{% static "/img/Logo.png" %}" type="image/x-icon" >
 </head>
 <body class="fixed-sn light-blue-skin">
 
@@ -20,6 +22,7 @@
     <!-- END LOADING HEADER -->
 
     <!--Main Layout-->
+    {% include 'includes/alerts.html' %}
     <main>
         <div class="container-fluid mt-5">
     <!-- BEGIN LOADING CONTENT HERE -->
